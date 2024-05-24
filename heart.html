@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background-color: #000;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .heart{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            transform: rotate(45deg) scale(1);
+            box-shadow: 0 0 50px brown;
+            animation: beat 1s linear infinite;
+            animation-timing-function: ease;
+            z-index: 99;
+        }
+        .heart::before{
+            content: "";
+            position: absolute;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: brown;
+            box-shadow: 0 0 50px brown;
+        }
+        .heart::after{
+            content: "";
+            position: absolute;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: brown;
+            box-shadow: 0 0 50px brown;
+        }
+
+        @keyframes beat {
+            0%{
+                transform: rotate(45deg) scale(1);
+            }
+            20%{
+                transform: rotate(45deg) scale(1.2);  
+            }
+            40%{
+                transform: rotate(45deg) scale(1);  
+            }
+            60%{
+                transform: rotate(45deg) scale(1.4);  
+            }
+            80%{
+                transform: rotate(45deg) scale(1.2);  
+            }
+        }
+        .monitor{
+            margin-top: -470px;
+            z-index: 100;
+        }
+        .bn39 {
+            background-image: linear-gradient(135deg, #008aff, #86d472);
+            border-radius: 6px;
+            box-sizing: border-box;
+            color: #ffffff;
+            display: block;
+            height: 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            padding: 4px;
+            position: relative;
+            text-decoration: none;
+            width: 7em;
+            z-index: 2;
+          }
+          
+          .bn39:hover {
+            color: #fff;
+          }
+          
+          .bn39 .bn39span {
+            align-items: center;
+            background: #0e0e10;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            transition: background 0.5s ease;
+            width: 100%;
+          }
+          
+          .bn39:hover .bn39span {
+            background: transparent;
+          }
+    </style>
+</head>
+<body>
+    
+    <div class="heart"></div>
+    <div class="monitor">
+        <form  action="none" method="post" name="hrtform">
+            <input type="text" name="hrt" id="hrt" readonly="readonly">
+            <button type="button" class="changemargin btn btn-info" name="calculate" value="Calculate your BMI" onclick="calchrt()"><a class="bn39" href="#"><span class="bn39span">Heart Rate</span></a></button>
+        </form>
+    </div>
+    <script>
+        function calchrt() {
+            var heart=72+'bpm';
+            document.hrtform.hrt.value=heart;
+            
+        }
+
+        const { google }=require("googleapis");
+        
+        const URL = "https://www.googleapis.com/auth/fitness.heart_rate.read";
+
+        async function fetchData(){
+            const respose =await fetch(URL);
+            const data = await response.json();
+            console.log(response);
+            
+        }
+        fetchData();
+        console.log('end of code')
+        
+    </script>
+
+
+    <!-- <script>
+        // Function to fetch heart rate data from Google Fit API
+        async function fetchHeartRateData() {
+            // Replace 'YOUR_API_KEY' with your actual API key
+            const API_KEY = 'YOUR_API_KEY';
+    
+            // Request parameters
+            const params = {
+                "aggregateBy": [{
+                    "dataTypeName": "com.google.heart_rate.bpm",
+                    "dataSourceId": "raw:com.google.heart_rate.bpm:com.google.android.apps.fitness:user_input"
+                }],
+                "bucketByTime": { "durationMillis": 86400000 },
+                "startTimeMillis": new Date('2024-01-01').getTime(), // Replace with start date
+                "endTimeMillis": new Date().getTime() // Replace with end date (today)
+            };
+    
+            // Construct URL for fetching heart rate data
+            const URL = `https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate?key=${API_KEY}`;
+    
+            try {
+                // Fetch heart rate data from Google Fit API
+                const response = await fetch(URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(params)
+                });
+    
+                const data = await response.json();
+                console.log('Heart rate data:', data);
+            } catch (error) {
+                console.error('Error fetching heart rate data:', error);
+            }
+        }
+    
+        // Call the fetchHeartRateData function
+        fetchHeartRateData();
+    </script> -->
+    
+</body>
+</html>

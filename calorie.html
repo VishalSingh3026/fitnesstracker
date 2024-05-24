@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="./javascript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>FITNESS TRACKER</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1 style="color: red;">FITNESS TRACKER</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./foodchart.html">Food Chart</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CALCULATORS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="bmi.html">BMI CALCULATOR</a></li>
+                  <li><a class="dropdown-item" href="calorie.html">CALORIE CALCULATOR</a></li>
+                  <li><a class="dropdown-item" href="protein.html">MACROS CALCULATOR</a></li>
+                  <li><a class="dropdown-item" href="./heart.html">Heart Rate</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./contact.html">Contact Us</a>
+              </li>
+    	 </ul>
+         <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar  -->
+    <div class="mainbody">
+      <div class="changemargin" style="color: rgb(255, 187, 0);">        
+        <p id="intro"><h5>Calculate your Calories for Base Metabolic Rate by using the form below.
+           Enter your gender,age,weight and height to display your Base Metabolic Rate Calories.
+           </h5></p>
+      </div>
+      <div class="form-check">
+        <input id="female"  name="gender" onchange="calsPerDay()" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Female
+        </label>
+      </div>
+      <div class="form-check">
+        <input id="male" name="gender" onchange="calsPerDay()" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Male
+        </label>
+    </div><br>
+<label>Age:
+  <input id="age" type="number" oninput="calsPerDay()" value="0">
+  years
+</label><br><br>
+<label>Height:
+  <input id="height" type="number" oninput="calsPerDay()" value="0">
+  in inches (12 inches=1 foot)
+</label><br><br>
+<label>Weight:
+  <input id="weight" type="number" oninput="calsPerDay()" value="0">
+  in pounds
+</label><br><br>
+<h5 class="changemargin"><span class="badge bg-success">Base metabolic rate: <span id="totalCals" style="color: red;"></span> kcal per day</span></h5
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="//code.tidio.co/lhkzvq5umzfab1cuutdopgmhfsi2nabj.js" async></script>
+  </body>
+</html>

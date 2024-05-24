@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./javascript.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>FITNESS TRACKER</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1 style="color: red;">FITNESS TRACKER</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./foodchart.html">Food Chart</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CALCULATORS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="bmi.html">BMI CALCULATOR</a></li>
+                <li><a class="dropdown-item" href="calorie.html">CALORIE CALCULATOR</a></li>
+                <li><a class="dropdown-item" href="protein.html">MACROS CALCULATOR</a></li>
+                <li><a class="dropdown-item" href="./heart.html">Heart Rate</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar  -->
+
+    <div class="mainbody">
+        <div>
+            <div class="changemargin" style="color: rgb(255, 187, 0);">        
+              <p id="intro"><h5>Calculate amount of fats,carbs and proteins to be taken daily
+                   by using the form below. Enter your weight and height and 
+                   click the Calculate button.</h5></p>
+            </div>
+            <form action="none" method="post" name="bmiform">
+              <fieldset>
+                 <h5><span class="badge bg-danger">Height and Weight</span></h5> 
+                <div>
+                  <label for="inches">Height (cms):</label>
+                  <input type="text" name="inches" id="inches">
+                </div>
+                <br>
+                <div>
+                  <label for="pounds">Weight (kgs):</label>
+                  <input type="text" name="pounds" id="pounds"></div>
+                <br>
+ <button type="button" class="changemargin btn btn-info" name="calculate" value="Calculate your BMI" onclick="calcMACROS()">Calculate</button>
+                    <br><br>
+              </fieldset>
+              <fieldset>
+  
+                <h5 class="changemargin"><span class="badge bg-danger">BMI</span></h5>
+                <label for="bmi" id="bmi_label">proteins</label>
+                <input type="text" name="proteins" id="proteins" readonly="readonly"><br><br>
+                <label for="bmi" id="bmi_label">Fats</label>
+                <input type="text" name="fats" id="fats" readonly="readonly"><br><br>
+                <label for="bmi" id="bmi_label">Carbohydrates</label>
+                <input type="text" name="carbohydrates" id="carbohydrates" readonly="readonly">
+              </fieldset>
+            </form>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="//code.tidio.co/lhkzvq5umzfab1cuutdopgmhfsi2nabj.js" async></script>
+  </body>
+</html>

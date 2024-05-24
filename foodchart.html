@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CUSTOM CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CUSTOM CSS  -->
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>FITNESS TRACKER</title>
+  </head>
+  <body>
+
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1 style="color: red;">FITNESS TRACKER</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./foodchart.html">Food Chart</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CALCULATORS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="bmi.html">BMI CALCULATOR</a></li>
+                <li><a class="dropdown-item" href="./calorie.html">CALORIE CALCULATOR</a></li>
+                <li><a class="dropdown-item" href="./protein.html">MACROS CALCULATOR</a></li>
+                <li><a class="dropdown-item" href="./heart.html">Heart Rate</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./contact.html">Contact Us</a>
+            </li>
+         
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar  -->
+
+    <div class="mainbody">
+        <center><h1 class="heading1">Nutritional values of Daily Foods</h1></center>
+        <table class="table" style="color: white;">
+            <thead>
+              <tr style="color: #3978f7;">
+                <th scope="col">S.NO</th>
+                <th scope="col">FOOD ITEM</th>
+                <th scope="col">Calories</th>
+                <th scope="col">PROTEINS</th>
+                <th scope="col">FATS</th>
+                <th scope="col">CARBOHYDRATES</th>
+                <th scope="col">VITAMINS AND MINERALS PRESENT</th>
+              </tr>
+              <tr style="color: #3978f7;">
+                <th></th>
+                <th>(100grams)</th>
+                <th>(kcal)</th>
+                <th>(gms)</th>
+                <th>(gms)</th>
+                <th>(gms)</th>
+                <th>(gms)</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">1</th>
+                <td>Rice (Cooked)</td>
+                <td>120</td>
+                <td>2.7</td>
+                <td>0.3</td>
+                <td>28</td>
+                <td>Calcium, B6, Magnisium, Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">2</th>
+                <td>Wheat</td>
+                <td>339</td>
+                <td>13.7</td>
+                <td>1.87</td>
+                <td>72.57</td>
+                <td>Vit B Complex,Calcium,Iron,Zinc,Magnesium</td>
+              </tr>
+              
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">3</th>
+                <td>Millets</td>
+                <td>378</td>
+                <td>11</td>
+                <td>4.3</td>
+                <td>72.8</td>
+                <td>B Complex,C,K,Phosphorous,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">4</th>
+                <td>Oats (Cooked)</td>
+                <td>68</td>
+                <td>2.4</td>
+                <td>1.4</td>
+                <td>12</td>
+                <td>Iron,A,Calcium,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">5</th>
+                <td>Maize</td>
+                <td>92</td>
+                <td>4</td>
+                <td>1.6</td>
+                <td>18</td>
+                <td>B Complex,Copper,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">6</th>
+                <td>Barley</td>
+                <td>354</td>
+                <td>12</td>
+                <td>2.3</td>
+                <td>73</td>
+                <td>B6,Calcium,Potassium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);"">
+                <th scope="row">7</th>
+                <td>Sun Flower Oil</td>
+                <td>884</td>
+                <td>0</td>
+                <td>100</td>
+                <td>0</td>
+                <td>K,E,Omega 6</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">8</th>
+                <td>Olive Oil</td>
+                <td>884</td>
+                <td>0</td>
+                <td>100</td>
+                <td>0</td>
+                <td>B6,Omega 6,E,K</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">9</th>
+                <td>Groundnut Oil</td>
+                <td>884</td>
+                <td>0</td>
+                <td>100</td>
+                <td>0</td>
+                <td>Omega 3,E</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">10</th>
+                <td>Cashews</td>
+                <td>553</td>
+                <td>18</td>
+                <td>44</td>
+                <td>30</td>
+                <td>Magnesium,B6,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">11</th>
+                <td>Almonds</td>
+                <td>597</td>
+                <td>22</td>
+                <td>53</td>
+                <td>19</td>
+                <td>Calcium,Iron,E</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">12</th>
+                <td>Pistachio</td>
+                <td>562</td>
+                <td>20</td>
+                <td>45</td>
+                <td>28</td>
+                <td>B6,C,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">13</th>
+                <td>Wall Nuts</td>
+                <td>654</td>
+                <td>15</td>
+                <td>65</td>
+                <td>14</td>
+                <td>C,Calcium,Iron,Potassium,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">14</th>
+                <td>Peanuts</td>
+                <td>569</td>
+                <td>26</td>
+                <td>49</td>
+                <td>16</td>
+                <td>B6,Calcium,Sodium,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">15</th>
+                <td>Dates</td>
+                <td>282</td>
+                <td>2.5</td>
+                <td>0.4</td>
+                <td>75</td>
+                <td>Magnesium,Iron,Calcium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">16</th>
+                <td>Raisins</td>
+                <td>299</td>
+                <td>3.1</td>
+                <td>0.5</td>
+                <td>79</td>
+                <td>B6,C,Calcium,Iron,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">17</th>
+                <td>Piegon Pea (Toor Dal)</td>
+                <td>343</td>
+                <td>22</td>
+                <td>1.5</td>
+                <td>63</td>
+                <td>B6,Iron,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">18</th>
+                <td>Mung Bean (Moong Dal)</td>
+                <td>347</td>
+                <td>24</td>
+                <td>1.2</td>
+                <td>63</td>
+                <td>A,C,Calcium,Iron,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">19</th>
+                <td>Black Gram (Urad Dal)</td>
+                <td>341</td>
+                <td>25</td>
+                <td>1.64</td>
+                <td>59</td>
+                <td>B Complex,Zinc,Sodium,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">20</th>
+                <td>Chick Pea(Bengal Gram)</td>
+                <td>364</td>
+                <td>19</td>
+                <td>6</td>
+                <td>61</td>
+                <td>B6,C,Calcium,Iron,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">21</th>
+                <td>Tomato</td>
+                <td>18</td>
+                <td>0.9</td>
+                <td>0.2</td>
+                <td>3.9</td>
+                <td>Magnesium,Manganese,Phosphorous,A,B,C,E,K</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">22</th>
+                <td>Potato</td>
+                <td>93</td>
+                <td>2.5</td>
+                <td>0.1</td>
+                <td>21</td>
+                <td>A,C,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">23</th>
+                <td>Sweet Potato</td>
+                <td>90</td>
+                <td>2</td>
+                <td>0.1</td>
+                <td>21</td>
+                <td>A,C,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">24</th>
+                <td>Broccoli</td>
+                <td>35</td>
+                <td>2.4</td>
+                <td>0.4</td>
+                <td>7.2</td>
+                <td>A,C,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">25</th>
+                <td>Cabbage</td>
+                <td>23</td>
+                <td>1.3</td>
+                <td>0.1</td>
+                <td>5.5</td>
+                <td>A,C,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">26</th>
+                <td>Cauliflower</td>
+                <td>22</td>
+                <td>1.8</td>
+                <td>0.4</td>
+                <td>3.8</td>
+                <td>A,C,Calcium,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">27</th>
+                <td>Carrot</td>
+                <td>35</td>
+                <td>0.8</td>
+                <td>0.2</td>
+                <td>8.4</td>
+                <td>A,B,E,K,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">28</th>
+                <td>Beetroot</td>
+                <td>44</td>
+                <td>1.7</td>
+                <td>0.2</td>
+                <td>10</td>
+                <td>A,C,Potassium,Calcium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">29</th>
+                <td>Onion</td>
+                <td>42</td>
+                <td>1.4</td>
+                <td>0.2</td>
+                <td>9.7</td>
+                <td>C,Potassium,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">30</th>
+                <td>Brinjal</td>
+                <td>36</td>
+                <td>0.8</td>
+                <td>0.3</td>
+                <td>9.8</td>
+                <td>C,Potassium,Zinc</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">31</th>
+                <td>Raddish</td>
+                <td>18.2</td>
+                <td>0.6</td>
+                <td>0.3</td>
+                <td>3.6</td>
+                <td>C,Magnesium,Zinc</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">32</th>
+                <td>Ladies Finger</td>
+                <td>40</td>
+                <td>1.8</td>
+                <td>0.6</td>
+                <td>5.94</td>
+                <td>A,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">33</th>
+                <td>Grapes</td>
+                <td>68</td>
+                <td>0.7</td>
+                <td>0.2</td>
+                <td>17.8</td>
+                <td>A,C,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">34</th>
+                <td>Apples</td>
+                <td>55</td>
+                <td>0.3</td>
+                <td>0.2</td>
+                <td>14</td>
+                <td>A,C,K,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">35</th>
+                <td>Water Melon</td>
+                <td>32</td>
+                <td>0.6</td>
+                <td>0.2</td>
+                <td>8.8</td>
+                <td>A,C,Potassium,Zinc</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">36</th>
+                <td>Mango</td>
+                <td>60</td>
+                <td>0.8</td>
+                <td>0.4</td>
+                <td>15</td>
+                <td>C,B6,B9,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">37</th>
+                <td>Berries</td>
+                <td>45</td>
+                <td>1</td>
+                <td>0.4</td>
+                <td>10.5</td>
+                <td>c,Magnesium,Zinc</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">38</th>
+                <td>Banana</td>
+                <td>98</td>
+                <td>1.2</td>
+                <td>0.4</td>
+                <td>26</td>
+                <td>C,Magnesium,Potassium,Zinc</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">39</th>
+                <td>Musk Melon</td>
+                <td>35.2</td>
+                <td>0.9</td>
+                <td>0.2</td>
+                <td>8.6</td>
+                <td>A,C,B6,B12,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">40</th>
+                <td>Kiwi</td>
+                <td>59</td>
+                <td>1.1</td>
+                <td>0.5</td>
+                <td>14</td>
+                <td>C,A,Copper,Calcium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">41</th>
+                <td>Orange</td>
+                <td>49</td>
+                <td>1</td>
+                <td>0.1</td>
+                <td>12.6</td>
+                <td>C,Iron,Calcium,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">42</th>
+                <td>Guava</td>
+                <td>67</td>
+                <td>2.5</td>
+                <td>1</td>
+                <td>14.4</td>
+                <td>C,A,Magnesium,Copper</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">43</th>
+                <td>Pine Apple</td>
+                <td>49.2</td>
+                <td>0.5</td>
+                <td>0.1</td>
+                <td>13.2</td>
+                <td>C,B9,Magnesium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">44</th>
+                <td>Papaya</td>
+                <td>42</td>
+                <td>0.4</td>
+                <td>0.2</td>
+                <td>10.4</td>
+                <td>C,B3,B2,B1</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">45</th>
+                <td>Strawberries</td>
+                <td>32</td>
+                <td>0.7</td>
+                <td>0.3</td>
+                <td>8.3</td>
+                <td>C,B1,B6,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">46</th>
+                <td>Soya Chunks</td>
+                <td>345</td>
+                <td>52</td>
+                <td>0.5</td>
+                <td>33</td>
+                <td>Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">47</th>
+                <td>1 EGG</td>
+                <td>78</td>
+                <td>7</td>
+                <td>5</td>
+                <td>0.6</td>
+                <td>A,D,Magnesium,Cobalamine</td>
+              </tr>
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">48</th>
+                <td>Chicken</td>
+                <td>239</td>
+                <td>27</td>
+                <td>14</td>
+                <td>0</td>
+                <td>A,D,C,B6,Cobalamine,Magnesium</td>
+              </tr>
+
+              
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">49</th>
+                <td>Chicken Breast</td>
+                <td>165</td>
+                <td>31</td>
+                <td>3.6</td>
+                <td>0</td>
+                <td>a,d,c,b6,Cobalamine,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">50</th>
+                <td>Mutton</td>
+                <td>294</td>
+                <td>25</td>
+                <td>21</td>
+                <td>0</td>
+                <td>Calcium,Cobalamine,B6,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">51</th>
+                <td>Pork</td>
+                <td>242</td>
+                <td>27</td>
+                <td>14</td>
+                <td>0</td>
+                <td>B,D,C,B6,Cobalamine,Magnesium,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">52</th>
+                <td>Beef</td>
+                <td>250</td>
+                <td>26</td>
+                <td>15</td>
+                <td>0</td>
+                <td>B6,Calcium,Iron,Magnesium,Cobalamine,Potassium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">53</th>
+                <td>Fish</td>
+                <td>206</td>
+                <td>22</td>
+                <td>12</td>
+                <td>0</td>
+                <td>Omega3,Omega6,C,Cobalamine</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">54</th>
+                <td>Prawns</td>
+                <td>99</td>
+                <td>24</td>
+                <td>0.3</td>
+                <td>0.2</td>
+                <td>Calcium,Iron,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">55</th>
+                <td>Butter</td>
+                <td>717</td>
+                <td>0.9</td>
+                <td>81</td>
+                <td>0.1</td>
+                <td>A,B,Calcium,Cobalamine</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">56</th>
+                <td>Cheese</td>
+                <td>402</td>
+                <td>25</td>
+                <td>33</td>
+                <td>1.3</td>
+                <td>A,B6,Calcium,Magnesium</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+                <th scope="row">57</th>
+                <td>Paneer</td>
+                <td>296</td>
+                <td>20</td>
+                <td>22</td>
+                <td>4.5</td>
+                <td>D,A,Calcium,Iron</td>
+              </tr>
+
+              <tr style="color: hsl(339, 53%, 28%);">
+               <th scope="row">58</th>
+                <td>Milk</td>
+                <td>64</td>
+                <td>3.3</td>
+                <td>3.7</td>
+                <td>4.7</td>
+                <td>A,Cobalamine,Calcium,Magnesium</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <div class="container">
+              <center><h1>Top 10 High Protein Foods</h1></center>
+              <h3>
+                <ul>
+                    <li>Chicken</li>
+                    <li>Fish</li>
+                    <li>Prawns</li>
+                    <li>Soya</li>
+                    <li>Pork</li>
+                    <li>Beef</li>
+                    <li>Mutton</li>
+                    <li>Paneer</li>
+                    <li>Whey Protein</li>
+                    <li>Nuts</li>
+                </ul> 
+              </h3>   
+          </div>
+
+          <div class="container">
+              <center><h1>Top 10 Fat Containing Foods</h1></center>
+              <h3>
+                  <ul>
+                      <li>Coconut Oil</li>
+                      <li>Olive Oil</li>
+                      <li>Sunflower Oil</li>
+                      <li>Walnuts</li>
+                      <li>Almonds</li>
+                      <li>Cashews</li>
+                      <li>Pistachio</li>
+                      <li>Red Meat</li>
+                      <li>Butter</li>
+                      <li>Cheese</li>
+                  </ul>
+              </h3>
+          </div>
+
+          <div class="container">
+              <center><h1>Top 10 Carbohydrates Containing Foods</h1></center>
+              <h3>
+                  <ul>
+                      <li>Oats</li>
+                      <li>Rice</li>
+                      <li>Wheat</li>
+                      <li>Millets</li>
+                      <li>Potato</li>
+                      <li>Buckwheat</li>
+                      <li>Banana</li>
+                      <li>Apple</li>
+                      <li>Sugars</li>
+                      <li>Beetroot</li>
+                  </ul>
+              </h3>
+          </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="//code.tidio.co/lhkzvq5umzfab1cuutdopgmhfsi2nabj.js" async></script>
+
+   
+  </body>
+</html>
